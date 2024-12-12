@@ -23,7 +23,7 @@ function App() {
             <div>
               <div className="company-name">
                 {job.company}
-                {job.new && <span className="badge new"> new</span>}
+                {job.new && <span className="badge new">new</span>}
                 {job.featured && (
                   <span className="badge featured"> features</span>
                 )}

@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 1200px;
+  width: 95vw;
   margin: 2rem auto;
   padding: 1rem;
 }
@@ -24,6 +24,21 @@ body {
   border-left: 4px solid transparent;
 }
 
+.job-card.featured {
+  border-left-color: #5ba4a4;
+}
+
+.job-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
 .company-name {
   font-size: 1.2rem;
@@ -31,7 +46,22 @@ body {
   color: #2c3a47;
 }
 
+.badge {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+}
 
+.badge.new {
+  background: #5ba4a4;
+}
+
+.badge.featured {
+  background: #2c3a47;
+}
 
 .job-title {
   font-size: 1.5rem;
@@ -65,7 +95,7 @@ body {
   transition: background 0.3s ease;
 }
 
-/* .job-tag:after {
+.job-tag:hover {
   background: #5ba4a4;
   color: white;
-} */
+}
