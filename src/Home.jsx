@@ -25,7 +25,7 @@ function Home() {
                 {job.company}
                 {job.new && <span className="badge new">new</span>}
                 {job.featured && (
-                  <span className="badge featured"> features</span>
+                  <span className="badge featured"> featured</span>
                 )}
               </div>
               <h2 className="job-title">{job.position}</h2>
