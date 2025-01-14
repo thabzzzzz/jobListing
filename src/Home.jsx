@@ -37,13 +37,13 @@ function Home() {
             </div>
           </div>
           <div className="job-tags">
-            {[job.role, job.level, ...job.languages, ...job.tools].map(
-              (value) => (
-                <span key={value} className="job-tag">
+            {[job.role, job.level, ...(job.tools || [])]
+              .filter(Boolean)
+              .map((value, index) => (
+                <span key={value + index} className="job-tag">
                   {value}
                 </span>
-              )
-            )}
+              ))}
           </div>
         </div>
       ))}
